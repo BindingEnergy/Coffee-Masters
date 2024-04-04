@@ -1,0 +1,172 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.title{
+    background-color: rgb(32, 3, 3);
+    display: block;
+    align-items: first baseline;
+}
+
+.branding{
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: bisque;
+    text-align: center;
+}
+
+.content{
+    background-color: white;
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "items items items  . . name name "
+    "items items items  . . name name"
+    "items items items  . . . ."
+    ". . . . . payment payment"
+    ". . . . . payment payment";
+}
+
+h4{
+    color: rgb(121, 87, 44);
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+
+.items{
+    border-radius: 8px;
+    border: 2px  rgb(48, 14, 14);
+    width: 1000px;
+    height: fit-content;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.123);
+    background-color: antiquewhite;
+    display: flex;
+    justify-content:  space-around;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.name{
+    margin: 25px;
+    padding: 7px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    border: 2px  rgb(48, 14, 14);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.123);
+}
+
+.payment{
+    margin: 25px;
+    padding: 7px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    border: 2px  rgb(48, 14, 14);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.123);
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 40px;
+    width: 400px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    border-color:  rgb(48, 14, 14);
+    border-style:outset;
+    padding: 10px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.namebox{
+    width: 400px;
+    height: 40px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    border-color:  rgb(48, 14, 14);
+    border-style: outset;
+    padding: 5px;
+    text-align: left;
+}
+
+.numberbox{
+    width: 200px;
+}
+
+.cvvfield{
+    width: 100px;
+}
+
+::placeholder{
+    font-family: 'Poppins', Courier, monospace;
+    font-weight: 200;
+    text-align: left;
+}
+
+.item{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 50px;
+    border-bottom: 1px solid rgb(58, 12, 12);
+    font-weight: 900;
+    font-size:larger;
+}
+
+.quantity{
+    font-weight: 100;
+    font-size: 0.95em;
+}
+
+.product{
+    font-weight: bold;
+}
+
+.checkout{
+    position: relative;
+    top: 90%;
+    left: 45%;
+    height: 300px;
+    width: 278px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+h5{
+    font-family: 'Poppins', Courier, monospace;
+    font-size: 1.25rem;
+}
+
+.subheadings{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.placeorder{
+    background-color: rgb(230, 155, 90);
+    border-radius: 20px;
+    position: relative;
+    height: 85px;
+    align-items: center;
+}
+
+.order{
+    position: relative;
+    left: 43%;
+    background-color: rgb(230, 155, 90);
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', Courier, monospace;
+    border: none;
+    font-size: 50px;
+}
+
+.order:hover{
+    text-decoration: underline rgba(41, 10, 10, 0.644);
+}
